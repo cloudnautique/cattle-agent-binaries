@@ -1,0 +1,8 @@
+image: rancher/docker-dind-base
+script:
+  - /usrlocal/bin/wrapdocker
+  - ./script/ci
+notify:
+  email:
+    recipients:
+      - bill@rancher.com
