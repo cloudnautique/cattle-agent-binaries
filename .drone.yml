@@ -1,4 +1,4 @@
-image: rancher/docker-dind-base
+image: rancher/docker-dind-base:latest
 script:
   - ./script/ci
 notify:
