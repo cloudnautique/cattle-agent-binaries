@@ -1,6 +1,5 @@
 image: rancher/docker-dind-base
 script:
-  - /usr/local/bin/wrapdocker
   - ./script/ci
 notify:
   email:
