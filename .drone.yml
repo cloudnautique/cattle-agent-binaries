@@ -1,5 +1,8 @@
 image: rancher/docker-dind-base:latest
 script:
+  - sleep 10
+  - cat /usr/local/bin/wrapdocker
+  - docker ps -a
   - ./script/ci
 notify:
   email:
