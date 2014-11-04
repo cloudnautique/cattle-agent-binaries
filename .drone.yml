@@ -1,9 +1,3 @@
 image: rancher/docker-dind-base:latest
 script:
-  - sleep 10
-  - cat /usr/local/bin/wrapdocker
-  - ps -ef
-  - /usr/local/bin/wrapdocker
-  - docker info
-  - docker ps -a
-  - ./script/ci
+  - /usr/local/bin/wrapdocker ./script/ci
