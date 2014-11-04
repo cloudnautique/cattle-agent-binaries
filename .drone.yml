@@ -1,6 +1,6 @@
 image: rancher/docker-dind-base:latest
 script:
-  - ./script/ci
+  - /usr/local/bin/wrapdocker ./script/ci
 notify:
   email:
     recipients:
